@@ -1,52 +1,89 @@
-body {
-    color: #212121;
+/* основной цвет текста #212121*/
+/* вторичный цвет теста #757575*/
+/* цвет акцента #2196F3*/
+/* белый цвет текста #FFFFFF*/
+/* черный цвет лого #000000*/
+/* серый цвет текста в футере rgba(255, 255, 255, 0.6)*/
+/* бэкграунд цвет #F5F5F5 */
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
 }
 
-ul {
+body {
+    background-color: #F5F5F5;
+    color: var(--primary-text-color);
+}
+
+.list {
     list-style: none;
 }
 
+/* Logo */
 .logo {
-    color: #2196F3;
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
-.logo:hover {
+.studio {
+    color: #000000;
+}
+
+.logo:hover,
+.logo:focus {
     color: aqua;
 }
 
 /* Site nav */
-
-span {
-    color: #000000;
-}
-
 .site-nav .link {
-    color: #212121;
+    color: var(--primary-text-color);
+    text-decoration: none;
 }
 
-.site-nav .link:hover {
+.site-nav .link:hover,
+.site-nav .link:focus {
     color: aqua;
 }
-/* Main */
 
-.section-title {
-    color: #212121;
+.site-nav .current{
+    color: var(--accent-color);
 }
 
-/* основной цвет текста #212121*/
+/* Contact nav */
+.contact-nav .link {
+    text-decoration: none;
+}
 
-/* вторичный цвет теста #757575*/
+.contact-nav .mail {
+    color: var(--accent-color);
+}
 
-/* белый цвет текста #FFFFFF*/
+.contact-nav .tel {
+    color: var(--secondary-text-color);
+}
 
-/* цвет синего текста в навигации #2196F3*/
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+    color: aqua;
+}
 
-/* акцент #2196F3*/
+/* Button */
+.button {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
 
-/* черный цвет лого #000000*/
+/* Section */
+.section-title {
+    color: var(--primary-text-color);
+}
 
-/* белый цвет лого и текста в футере #FFFFFF*/
-
-/* серый цвет текста в футере rgba(255, 255, 255, 0.6)*/
-
-/* бэкграунд цвет #F5F5F5 */
+/* Features */
+.feature .title {
+    color: var(--primary-text-color);
+}
+.feature-list .text {
+    color: var(--secondary-text-color);
+}
