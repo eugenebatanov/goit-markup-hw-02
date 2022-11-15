@@ -5,6 +5,8 @@
 /* черный цвет лого #000000*/
 /* серый цвет текста в футере rgba(255, 255, 255, 0.6)*/
 /* бэкграунд цвет #F5F5F5 */
+/* бэкграунд кнопок фильтра #F5F4FA*/
+
 :root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
@@ -78,6 +80,12 @@ body {
     color: var(--primary-white-color);
 }
 
+.button:hover,
+.button:focus {
+    color: aqua;
+    background-color: var(--secondary-text-color);
+}
+
 /* Section */
 .section-title {
     color: var(--primary-text-color);
@@ -89,4 +97,15 @@ body {
 }
 .feature-list .text {
     color: var(--secondary-text-color);
+}
+
+/* Filter */
+.buttons .link {
+    color: var(--primary-text-color);
+    background-color: #F5F4FA;
+}
+
+.buttons .all {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
