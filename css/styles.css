@@ -4,8 +4,12 @@
 /* белый цвет текста #FFFFFF*/
 /* черный цвет лого #000000*/
 /* серый цвет текста в футере rgba(255, 255, 255, 0.6)*/
-/* бэкграунд цвет #F5F5F5 */
-/* бэкграунд кнопок фильтра #F5F4FA*/
+/* бэкграунд цвет основной #F5F5F5 */
+/* бэкграунд цвет второстепенный #F5F4FA */
+/* бэкграунд цвет хедера #FFFFFF */
+/* бэкграунд кнопок фильтра #F5F4FA */
+/* бэкграунд цвет футера #2F303A */
+/* цвет ссылок футера rgba(255, 255, 255, 0.6) */
 
 :root {
     --primary-text-color: #212121;
@@ -23,14 +27,22 @@ body {
     list-style: none;
 }
 
+.page-header {
+    background-color: #FFFFFF;
+}
+
 /* Logo */
 .logo {
     color: var(--accent-color);
     text-decoration: none;
 }
 
-.studio {
+.studio-header {
     color: #000000;
+}
+
+.studio-footer {
+    color: #FFFFFF;
 }
 
 .logo:hover,
@@ -99,6 +111,10 @@ body {
     color: var(--secondary-text-color);
 }
 
+.team {
+    background-color: #F5F4FA;
+}
+
 /* Filter */
 .buttons .link {
     color: var(--primary-text-color);
@@ -108,4 +124,37 @@ body {
 .buttons .all {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+}
+
+/* Portfolio */
+.works .service {
+    text-decoration: none;
+}
+
+.works .text {
+    color: var(--secondary-text-color);
+}
+
+.works .title {
+    color: var(--primary-text-color);
+}
+
+/* Footer */
+.footer {
+    background-color: #2F303A;
+}
+
+.address .map {
+    color: #FFFFFF;
+}
+
+.address .link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address .link:hover,
+.address .link:focus {
+    color: aqua;
+    background-color: var(--secondary-text-color)
 }
