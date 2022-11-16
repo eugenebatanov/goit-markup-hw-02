@@ -121,6 +121,12 @@ body {
     background-color: #F5F4FA;
 }
 
+.buttons .link:hover,
+.buttons .link:focus {
+    color: aqua;
+    background-color: var(--secondary-text-color);
+}
+
 .buttons .all {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
