@@ -11,6 +11,12 @@
 /* бэкграунд цвет футера и героя #2F303A */
 /* цвет ссылок футера rgba(255, 255, 255, 0.6) */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
@@ -29,10 +35,21 @@ body {
 
 .list {
     list-style: none;
+
+    padding: 0;
+    margin: 0;
 }
 
 .page-header {
     background-color: #FFFFFF;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
 }
 
 /* Logo */
@@ -104,7 +121,13 @@ body {
 
 /* Hero */
 .hero {
-    background-color: #2F303A; 
+    background-color: #2F303A;
+    text-align: center;
+}
+
+.hero .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero .title {
@@ -113,9 +136,11 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;    
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 button {
@@ -125,6 +150,11 @@ button {
 .button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+
+    border-radius: 4px;
+    padding: 10px 24px;
+    text-align: center;
+    min-width: 200px;
 }
 
 .hero .button {
@@ -151,9 +181,16 @@ button {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 /* Features */
+.advantage .container {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 .feature .title {
     color: var(--primary-text-color);
 
@@ -161,6 +198,9 @@ button {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .feature .text {
@@ -169,16 +209,28 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-}
 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* Team */
 .team {
     background-color: #F5F4FA;
+}
+
+.team .container {
+    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .feature .name {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team .text {
@@ -241,13 +293,23 @@ button {
     background-color: #2F303A;
 }
 
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .address .map {
     color: #FFFFFF;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .address .link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+
+    display: block;
 }
 
 .address .link:hover,
@@ -258,6 +320,7 @@ button {
 
 .address {
     font-style: normal;
+    margin-top: 28px;
 }
 
 .address .map,
@@ -265,4 +328,9 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+}
+
+.address .mail {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
