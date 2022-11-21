@@ -4,7 +4,7 @@
 /* белый цвет текста #FFFFFF*/
 /* черный цвет лого #000000*/
 /* серый цвет текста в футере rgba(255, 255, 255, 0.6)*/
-/* бэкграунд цвет основной #F5F5F5 */
+/* бэкграунд цвет основной #FFFFFF */
 /* бэкграунд цвет второстепенный #F5F4FA */
 /* бэкграунд цвет хедера #FFFFFF */
 /* бэкграунд кнопок фильтра #F5F4FA */
@@ -25,7 +25,7 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     color: var(--primary-text-color);
 
     font-family: roboto, sans-serif;
@@ -78,13 +78,32 @@ body {
 }
 
 /* Site nav */
+.nav {
+    display: flex;
+    align-items: center;
+}
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     color: var(--primary-text-color);
 
     text-decoration: none;
     font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    
 }
 
 .site-nav .link:hover,
@@ -98,6 +117,15 @@ body {
 }
 
 /* Contact nav */
+.contact-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-nav .item+ .item {
+    padding-left: 40px;
+}
+
 .contact-nav .link {
     text-decoration: none;
     font-size: 14px;
@@ -128,6 +156,7 @@ body {
 .hero .container {
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
 }
 
 .hero .title {
@@ -161,7 +190,6 @@ button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
