@@ -22,6 +22,7 @@
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
+    --works-item-gap: 30px;
 }
 
 body {
@@ -231,6 +232,14 @@ button {
     margin-bottom: 10px;
 }
 
+.feature {
+    display: flex;
+}
+
+.feature .item+ .item {
+    padding-left: 30px;
+}
+
 .feature .text {
     color: var(--secondary-text-color);
 
@@ -269,6 +278,10 @@ button {
 }
 
 /* Filter */
+.buttons {
+    display: flex;
+}
+
 .buttons .link {
     color: var(--primary-text-color);
     background-color: #F5F4FA;
@@ -295,6 +308,20 @@ button {
 }
 
 /* Portfolio */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: calc(-1 * var(--works-item-gap));
+    margin-top: calc( -1 * var(--works-item-gap));
+}
+
+.works .item {
+    flex-basis: calc(100% / 3 - var(--works-item-gap));
+    margin-left: var(--works-item-gap);
+    margin-top: var(--works-item-gap);
+}
+
 .works .service {
     text-decoration: none;
 }
